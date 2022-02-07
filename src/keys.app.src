@@ -1,0 +1,24 @@
+{application, keys,
+ [{description, "An escript"},
+  {vsn, "0.1.0"},
+  {registered, []},
+  {applications,
+   [kernel,
+    stdlib,
+    libp2p_crypto,
+    ecc_compact,
+    base32,
+    enacl,
+    erl_base58,
+    multiaddr,
+    multihash,
+    small_ints,
+    crypto
+   ]},
+  {mod, {keys_app, []}},
+  {env,[]},
+  {modules, []},
+
+  {licenses, ["Apache 2.0"]},
+  {links, []}
+ ]}.
